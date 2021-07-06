@@ -8,6 +8,7 @@ Ensure that you have the following installed to setup.
 2. tsc v4.3.5 or higher. 
 3. ts-node v10.0.0 or higher. 
 4. npm v7.18.1 or higher. 
+5. tslint v5.12.1 or higher 
 
 ### Setup 
  

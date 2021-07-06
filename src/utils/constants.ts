@@ -1,1 +1,1 @@
-export const COMMAND_PREFIX: string = "!";
+export const COMMAND_PREFIX = '!';

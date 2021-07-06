@@ -7,7 +7,9 @@
         "dev": "ts-node src/app.ts",
         "start": "ts-node dist/app.js",
         "build": "tsc -p .", 
-        "deploy": "npm run build && npm run start"
+        "deploy": "npm run build && npm run start", 
+        "lint": "tslint -c tslint.json 'src/**/*{.ts,.tsx}'", 
+        "lint:fix": "npm run lint --fix"
     },
     "repository": {
         "type": "git",

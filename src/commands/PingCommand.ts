@@ -1,14 +1,14 @@
-import { Message } from "discord.js";
-import { Command } from "./Command";
+import { Message } from 'discord.js';
+import { Command } from './Command';
 
 export class PingCommand extends Command {
     constructor() {
         super(
-            'ping', 'ping'
-        )
+            'ping', 'ping',
+        );
     }
 
-    execute(message: Message, args: string[]): void {
+    public execute(message: Message, args: string[]): void {
         message.channel.send(`Pong! ${message.author.toString()}`);
     }
 }
