@@ -1,7 +1,7 @@
 import { Message } from 'discord.js';
 import { Command } from './Command';
 
-export class PingCommand extends Command {
+export default class PingCommand extends Command {
     constructor() {
         super(
             'ping', 'ping',
@@ -11,8 +11,4 @@ export class PingCommand extends Command {
     public execute(message: Message, args: string[]): void {
         message.channel.send(`Pong! ${message.author.toString()}`);
     }
-}
-
-export function instantiate(): Command {
-    return new PingCommand();
 }

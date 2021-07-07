@@ -22,8 +22,8 @@ export class CommandHandler {
         );
 
         for (const file of commandFiles) {
-            const dependency = require(__dirname + `/../commands/${file}`);
-            const command: Command = dependency.instantiate();
+            const commandDependency = require(__dirname + `/../commands/${file}`);
+            const command: Command = Reflect.construct(commandDependency.default, []);
             this._commands.set(command.name, command);
         }
     }
